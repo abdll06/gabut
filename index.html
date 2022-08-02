@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>gabut</title>
+  </head>
+  <body>
+   <h1>Haii Cantikkk</h1>
+   <img src="img.gif" />
+   <h1>Mau ga jadi pacarku?</h1>
+   <button id="btn_mau" onclick='alert("I <3 U")'>Mau</button>
+   <button id="btn_gamau" onclick='gamau(this)'
+   style='position:absolute'>Gamau</button>
+   
+  </body>
+  
+  <script>
+    function gamau(id){
+      var mau = document.getElementById('btn_mau');
+      var i = Math.floor(Math.random()*300)+1;
+      var j = Math.floor(Math.random()*100)+mau.offsetTop;
+      id.style.left = i+'px';
+      id.style.top = j+'px';
+  }
+  </script>
+</html>
